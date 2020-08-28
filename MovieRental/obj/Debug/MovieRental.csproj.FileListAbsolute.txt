@@ -113,3 +113,6 @@ C:\Users\QL494BU\source\GITREPO\MovieRental\MovieRental\obj\Debug\MovieRental.Mi
 C:\Users\QL494BU\source\GITREPO\MovieRental\MovieRental\obj\Debug\MovieRental.Migrations.AddMembershipTypeTOCustomer.resources
 C:\Users\QL494BU\source\GITREPO\MovieRental\MovieRental\obj\Debug\MovieRental.Migrations.PopulateMembershipType.resources
 C:\Users\QL494BU\source\GITREPO\MovieRental\MovieRental\obj\Debug\MovieRental.Migrations.AddAnnotationsToNameColoumnCustomer.resources
+C:\Users\QL494BU\source\GITREPO\MovieRental\MovieRental\obj\Debug\MovieRental.Migrations.AddmembershipNameToMembershipType.resources
+C:\Users\QL494BU\source\GITREPO\MovieRental\MovieRental\obj\Debug\MovieRental.Migrations.UpdateDataOfMembershipType.resources
+C:\Users\QL494BU\source\GITREPO\MovieRental\MovieRental\obj\Debug\MovieRental.Migrations.AddDateOfBirthCustomer.resources
