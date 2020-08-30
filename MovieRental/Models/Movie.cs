@@ -16,7 +16,7 @@ namespace MovieRental.Models
         public DateTime ReleaseDate { get; set; }
         public DateTime AddDate { get; set; }
         public byte NumberInStock { get; set; }
-        [Required]
+       
         public Genre Genre { get; set; }
         public byte GenreId { get; set; }
     }
