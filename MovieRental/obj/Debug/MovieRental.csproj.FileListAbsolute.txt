@@ -106,3 +106,17 @@ C:\Users\QL494BU\source\GITREPO\MovieRental\MovieRental\obj\Debug\MovieRental.cs
 C:\Users\QL494BU\source\GITREPO\MovieRental\MovieRental\obj\Debug\MovieRental.csproj.CopyComplete
 C:\Users\QL494BU\source\GITREPO\MovieRental\MovieRental\obj\Debug\MovieRental.dll
 C:\Users\QL494BU\source\GITREPO\MovieRental\MovieRental\obj\Debug\MovieRental.pdb
+C:\Users\QL494BU\source\GITREPO\MovieRental\MovieRental\obj\Debug\MovieRental.Migrations.InitialMigration.resources
+C:\Users\QL494BU\source\GITREPO\MovieRental\MovieRental\obj\Debug\MovieRental.csproj.GenerateResource.cache
+C:\Users\QL494BU\source\GITREPO\MovieRental\MovieRental\obj\Debug\MovieRental.Migrations.dbsetfor_Custometradded.resources
+C:\Users\QL494BU\source\GITREPO\MovieRental\MovieRental\obj\Debug\MovieRental.Migrations.AddIsSubscribed.resources
+C:\Users\QL494BU\source\GITREPO\MovieRental\MovieRental\obj\Debug\MovieRental.Migrations.AddMembershipTypeTOCustomer.resources
+C:\Users\QL494BU\source\GITREPO\MovieRental\MovieRental\obj\Debug\MovieRental.Migrations.PopulateMembershipType.resources
+C:\Users\QL494BU\source\GITREPO\MovieRental\MovieRental\obj\Debug\MovieRental.Migrations.AddAnnotationsToNameColoumnCustomer.resources
+C:\Users\QL494BU\source\GITREPO\MovieRental\MovieRental\obj\Debug\MovieRental.Migrations.AddmembershipNameToMembershipType.resources
+C:\Users\QL494BU\source\GITREPO\MovieRental\MovieRental\obj\Debug\MovieRental.Migrations.UpdateDataOfMembershipType.resources
+C:\Users\QL494BU\source\GITREPO\MovieRental\MovieRental\obj\Debug\MovieRental.Migrations.AddDateOfBirthCustomer.resources
+C:\Users\QL494BU\source\GITREPO\MovieRental\MovieRental\obj\Debug\MovieRental.Migrations.AddColoumnsToMovieClass.resources
+C:\Users\QL494BU\source\GITREPO\MovieRental\MovieRental\obj\Debug\MovieRental.Migrations.AddGenre.resources
+C:\Users\QL494BU\source\GITREPO\MovieRental\MovieRental\obj\Debug\MovieRental.Migrations.PopulateGenre.resources
+C:\Users\QL494BU\source\GITREPO\MovieRental\MovieRental\obj\Debug\MovieRental.Migrations.AddValidation.resources

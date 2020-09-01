@@ -7,7 +7,7 @@
 
 <h2>Customer</h2>
 <p>
-        @Html.ActionLink("Create New", "Create")
+        @Html.ActionLink("Create New", "Save","Customers", null , new { @class = "btn btn-primary" })
     </p>
 @if (!Model.Any())
 {
@@ -20,6 +20,7 @@ else
             <th>
                 @Html.DisplayNameFor(model => model.Name)
             </th>
+            <th>Membership Type</th>
             <th></th>
         </tr>
 
@@ -29,8 +30,9 @@ else
                 <td>
                     @Html.ActionLink(item.Name, "Details", "Customers", new { id = item.Id }, null)
                 </td>
+                <td>@item.MembershipType.Name</td>
                 <td>
-                        @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+                        @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
                         @Html.ActionLink("Details", "Details", new { id=item.Id }) |
                         @Html.ActionLink("Delete", "Delete", new { id=item.Id })
                     </td>
