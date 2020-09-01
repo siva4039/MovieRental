@@ -26,8 +26,10 @@ namespace MovieRental.Controllers
         public ActionResult Save()
         {
             var membershipType = _context.membershipTypes.ToList();
+       
             var customerViewModel = new CustomerViewModel
             {
+                Customer = new Customer(),
                 membershipTypes = membershipType
             };
 
@@ -36,7 +38,17 @@ namespace MovieRental.Controllers
         [HttpPost]
         public ActionResult Create(Customer customer)
         {
-            if(customer.Id == 0)
+            if (!ModelState.IsValid)
+            {
+                var viewModel = new CustomerViewModel
+                {
+                    Customer = customer,
+                    membershipTypes = _context.membershipTypes.ToList()
+                };
+
+                return View("Save", viewModel);
+            }
+            if (customer.Id == 0)
             {
                 _context.customers.Add(customer);
             }

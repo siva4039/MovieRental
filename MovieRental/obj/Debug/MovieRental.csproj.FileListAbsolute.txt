@@ -119,3 +119,4 @@ C:\Users\QL494BU\source\GITREPO\MovieRental\MovieRental\obj\Debug\MovieRental.Mi
 C:\Users\QL494BU\source\GITREPO\MovieRental\MovieRental\obj\Debug\MovieRental.Migrations.AddColoumnsToMovieClass.resources
 C:\Users\QL494BU\source\GITREPO\MovieRental\MovieRental\obj\Debug\MovieRental.Migrations.AddGenre.resources
 C:\Users\QL494BU\source\GITREPO\MovieRental\MovieRental\obj\Debug\MovieRental.Migrations.PopulateGenre.resources
+C:\Users\QL494BU\source\GITREPO\MovieRental\MovieRental\obj\Debug\MovieRental.Migrations.AddValidation.resources

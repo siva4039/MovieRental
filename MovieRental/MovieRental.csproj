@@ -224,6 +224,10 @@
     <Compile Include="Migrations\202008281214331_PopulateGenre.designer.cs">
       <DependentUpon>202008281214331_PopulateGenre.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202009010415346_AddValidation.cs" />
+    <Compile Include="Migrations\202009010415346_AddValidation.designer.cs">
+      <DependentUpon>202009010415346_AddValidation.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -234,6 +238,7 @@
     <Compile Include="Models\MembershipType.cs" />
     <Compile Include="Models\Movie.cs" />
     <Compile Include="Models\MovieViewModel.cs" />
+    <Compile Include="Models\Must18YearsOldIfAMember.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -354,6 +359,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202008281214331_PopulateGenre.resx">
       <DependentUpon>202008281214331_PopulateGenre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202009010415346_AddValidation.resx">
+      <DependentUpon>202009010415346_AddValidation.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -10,13 +10,16 @@ namespace MovieRental.Models
     {
 
         public int Id { get; set; }
-        [Required]
+        [Required(ErrorMessage ="Please enter the Name")]
         [StringLength(255)]
         public string Name { get; set; }
         public bool IsSubscribedToNewsLetters { get; set; }
         public MembershipType MembershipType { get; set; }
-        public byte MembershipTypeId { get; set; }
+        public byte? MembershipTypeId { get; set; }
+        [Must18YearsOldIfAMember]
         public DateTime? BirthDate { get; set; }
+
+        
 
     }
 }
