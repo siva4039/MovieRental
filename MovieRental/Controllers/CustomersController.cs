@@ -36,6 +36,7 @@ namespace MovieRental.Controllers
             return View(customerViewModel);
         }
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Create(Customer customer)
         {
             if (!ModelState.IsValid)

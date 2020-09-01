@@ -44,33 +44,40 @@ namespace MovieRental.Controllers
             var genreList = _context.genres.ToList();
             var viewModel = new MovieViewModel()
             { 
+                
                 genres = genreList
             };
 
             return View(viewModel);
         }
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Save(Movie movie)
         {
-            var temp = new Movie();
-            temp.Id = movie.Id;
-            temp.Name = movie.Name;
-            temp.ReleaseDate = movie.ReleaseDate;
-            temp.AddDate = DateTime.Now;
-            temp.GenreId = movie.GenreId;
-            temp.NumberInStock = movie.NumberInStock;
-            if(temp.Id == 0)
+            if (!ModelState.IsValid)
             {
-                _context.movies.Add(temp);
+                var viewModel = new MovieViewModel(movie) {
+                   
+                    genres = _context.genres.ToList()
+                };
+
+                return View("Create", viewModel);
+
+            }
+            movie.AddDate = DateTime.Now; 
+            
+            if (movie.Id == 0)
+            {
+                _context.movies.Add(movie);
             }
             else
             {
-                var movieInDb = _context.movies.Single(c => c.Id == temp.Id);
-                movieInDb.Name = temp.Name;
-                movieInDb.ReleaseDate = temp.ReleaseDate;
-                movieInDb.NumberInStock = temp.NumberInStock;
-                movieInDb.AddDate = temp.AddDate;
-                movieInDb.GenreId = temp.GenreId;
+                var movieInDb = _context.movies.Single(c => c.Id == movie.Id);
+                movieInDb.Name = movie.Name;
+                movieInDb.ReleaseDate = movie.ReleaseDate;
+                movieInDb.NumberInStock = movie.NumberInStock;
+                movieInDb.AddDate = movie.AddDate;
+                movieInDb.GenreId = movie.GenreId;
             }
             _context.SaveChanges();
             return RedirectToAction("Index", "Movies");
@@ -83,9 +90,9 @@ namespace MovieRental.Controllers
             {
                 return Content("no movie found");
             }
-            var viewModel = new MovieViewModel()
+            var viewModel = new MovieViewModel(movie)
             {
-                movie = movie,
+                
                 genres = _context.genres.ToList()
             };
             return View(viewModel);
