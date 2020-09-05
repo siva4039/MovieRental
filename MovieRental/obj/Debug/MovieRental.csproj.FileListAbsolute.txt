@@ -120,3 +120,11 @@ C:\Users\QL494BU\source\GITREPO\MovieRental\MovieRental\obj\Debug\MovieRental.Mi
 C:\Users\QL494BU\source\GITREPO\MovieRental\MovieRental\obj\Debug\MovieRental.Migrations.AddGenre.resources
 C:\Users\QL494BU\source\GITREPO\MovieRental\MovieRental\obj\Debug\MovieRental.Migrations.PopulateGenre.resources
 C:\Users\QL494BU\source\GITREPO\MovieRental\MovieRental\obj\Debug\MovieRental.Migrations.AddValidation.resources
+C:\Users\QL494BU\source\GITREPO\MovieRental\MovieRental\bin\System.Net.Http.Formatting.dll
+C:\Users\QL494BU\source\GITREPO\MovieRental\MovieRental\bin\System.Web.Http.dll
+C:\Users\QL494BU\source\GITREPO\MovieRental\MovieRental\bin\System.Web.Http.WebHost.dll
+C:\Users\QL494BU\source\GITREPO\MovieRental\MovieRental\bin\System.Net.Http.Formatting.xml
+C:\Users\QL494BU\source\GITREPO\MovieRental\MovieRental\bin\System.Web.Http.xml
+C:\Users\QL494BU\source\GITREPO\MovieRental\MovieRental\bin\System.Web.Http.WebHost.xml
+C:\Users\QL494BU\source\GITREPO\MovieRental\MovieRental\bin\AutoMapper.dll
+C:\Users\QL494BU\source\GITREPO\MovieRental\MovieRental\bin\AutoMapper.xml

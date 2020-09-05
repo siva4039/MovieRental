@@ -21,6 +21,7 @@ namespace MovieRental.Controllers
         protected override void Dispose(bool disposing)
         {
             _context.Dispose();
+
         }
 
         public ActionResult Save()
@@ -95,8 +96,8 @@ namespace MovieRental.Controllers
         // GET: Customers
         public ActionResult Index()
         {
-            var customers = _context.customers.Include(c => c.MembershipType).ToList();
-            return View(customers);
+            
+            return View();
         }
 
         public ActionResult Details(int id)
