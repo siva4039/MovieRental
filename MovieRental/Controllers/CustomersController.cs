@@ -94,6 +94,7 @@ namespace MovieRental.Controllers
             return RedirectToAction("Index", "Customers");
         }
         // GET: Customers
+      
         public ActionResult Index()
         {
             

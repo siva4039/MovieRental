@@ -8,6 +8,9 @@ namespace MovieRental.Models
         [Required]
         [Display(Name = "Email")]
         public string Email { get; set; }
+        [Required]
+        [Display(Name = "Aadhar Name")]
+        public string AadharNumber { get; set; }
     }
 
     public class ExternalLoginListViewModel
@@ -64,6 +67,9 @@ namespace MovieRental.Models
 
     public class RegisterViewModel
     {
+        [Required]
+        [Display(Name ="Aadhar Number")]
+        public string AadharNumber { get; set; }
         [Required]
         [EmailAddress]
         [Display(Name = "Email")]
