@@ -257,6 +257,10 @@
     <Compile Include="Migrations\202009081308035_AddingAadharToTheRegisterForm.designer.cs">
       <DependentUpon>202009081308035_AddingAadharToTheRegisterForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202009081516576_AddMobile.cs" />
+    <Compile Include="Migrations\202009081516576_AddMobile.designer.cs">
+      <DependentUpon>202009081516576_AddMobile.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -574,6 +578,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202009081308035_AddingAadharToTheRegisterForm.resx">
       <DependentUpon>202009081308035_AddingAadharToTheRegisterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202009081516576_AddMobile.resx">
+      <DependentUpon>202009081516576_AddMobile.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

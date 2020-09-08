@@ -6,6 +6,9 @@ namespace MovieRental.Models
     public class ExternalLoginConfirmationViewModel
     {
         [Required]
+        [Display(Name = "Mobile Number")]
+        public string Mobile { get; set; }
+        [Required]
         [Display(Name = "Email")]
         public string Email { get; set; }
         [Required]
@@ -67,6 +70,9 @@ namespace MovieRental.Models
 
     public class RegisterViewModel
     {
+        [Required]
+        [Display(Name ="Mobile Number")]
+        public string Mobile { get; set; }
         [Required]
         [Display(Name ="Aadhar Number")]
         public string AadharNumber { get; set; }

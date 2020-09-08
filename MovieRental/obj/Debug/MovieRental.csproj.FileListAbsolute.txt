@@ -130,3 +130,4 @@ C:\Users\QL494BU\source\GITREPO\MovieRental\MovieRental\bin\AutoMapper.dll
 C:\Users\QL494BU\source\GITREPO\MovieRental\MovieRental\bin\AutoMapper.xml
 C:\Users\QL494BU\source\GITREPO\MovieRental\MovieRental\obj\Debug\MovieRental.Migrations.SeedUsers.resources
 C:\Users\QL494BU\source\GITREPO\MovieRental\MovieRental\obj\Debug\MovieRental.Migrations.AddingAadharToTheRegisterForm.resources
+C:\Users\QL494BU\source\GITREPO\MovieRental\MovieRental\obj\Debug\MovieRental.Migrations.AddMobile.resources
