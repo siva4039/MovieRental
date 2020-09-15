@@ -1,0 +1,39 @@
+﻿@model MovieRental.Models.Customer
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Customer</h4>
+    <hr />
+    
+        
+
+      <h1>@Model.Name</h1>
+      <ul>
+          <li>Membership Type:@Model.MembershipType.Name</li>
+          
+              @if (Model.BirthDate.HasValue)
+              {
+                  <li>DateOfBirth:@Model.BirthDate.Value.ToShortDateString()</li>
+              }
+              <li></li>
+
+      </ul>
+        
+           
+           
+
+
+
+
+        
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

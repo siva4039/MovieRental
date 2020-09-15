@@ -6,6 +6,7 @@ using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.Google;
 using Owin;
 using MovieRental.Models;
+using System.Configuration;
 
 namespace MovieRental
 {
@@ -55,8 +56,8 @@ namespace MovieRental
             //   consumerSecret: "");
 
             app.UseFacebookAuthentication(
-               appId: "2730228697298384",
-               appSecret: "16edd42bd6dfd2a2ced2050617701b7b");
+               appId: ConfigurationManager.AppSettings["FacebookAppId"],
+               appSecret: ConfigurationManager.AppSettings["FacebookAppSecret"]);
 
             //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
             //{
