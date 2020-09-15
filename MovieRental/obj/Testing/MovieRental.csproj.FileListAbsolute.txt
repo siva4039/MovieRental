@@ -139,3 +139,5 @@ C:\Users\QL494BU\source\GITREPO\MovieRental\MovieRental\obj\Testing\MovieRental.
 C:\Users\QL494BU\source\GITREPO\MovieRental\MovieRental\obj\Testing\MovieRental.csproj.CopyComplete
 C:\Users\QL494BU\source\GITREPO\MovieRental\MovieRental\obj\Testing\MovieRental.dll
 C:\Users\QL494BU\source\GITREPO\MovieRental\MovieRental\obj\Testing\MovieRental.pdb
+C:\Users\QL494BU\source\GITREPO\MovieRental\MovieRental\bin\Elmah.dll
+C:\Users\QL494BU\source\GITREPO\MovieRental\MovieRental\obj\Testing\MovieRental.csprojAssemblyReference.cache
