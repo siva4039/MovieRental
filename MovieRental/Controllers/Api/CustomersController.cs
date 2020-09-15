@@ -29,10 +29,15 @@ namespace MovieRental.Controllers.Api
         }
         //Get api/customers
         [HttpGet]
-        public IHttpActionResult GetCustomer()
+        public IHttpActionResult GetCustomer(string query = null)
         {
-            var customerDto = _context.customers
-                .Include(c => c.MembershipType)
+            var customersQuery = _context.customers
+                .Include(c => c.MembershipType);
+
+            if (!string.IsNullOrWhiteSpace(query))
+                customersQuery = customersQuery.Where(c => c.Name.Contains(query));
+
+            var customerDto =customersQuery
                 .ToList()
                 .Select(Mapper.Map<Customer, CustomerDto>);
             return Ok(customerDto);

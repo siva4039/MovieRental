@@ -136,3 +136,7 @@ C:\Users\QL494BU\source\GITREPO\MovieRental\MovieRental\bin\Glimpse.AspNet.dll
 C:\Users\QL494BU\source\GITREPO\MovieRental\MovieRental\bin\Glimpse.Core.dll
 C:\Users\QL494BU\source\GITREPO\MovieRental\MovieRental\bin\Glimpse.EF6.dll
 C:\Users\QL494BU\source\GITREPO\MovieRental\MovieRental\bin\Glimpse.Mvc5.dll
+C:\Users\QL494BU\source\GITREPO\MovieRental\MovieRental\obj\Debug\MovieRental.Migrations.AddNewRentalDomainClass.resources
+C:\Users\QL494BU\source\GITREPO\MovieRental\MovieRental\obj\Debug\MovieRental.Migrations.AddNumberAvailableToMovie.resources
+C:\Users\QL494BU\source\GITREPO\MovieRental\MovieRental\obj\Debug\MovieRental.Migrations.AddRentalEntityClass.resources
+C:\Users\QL494BU\source\GITREPO\MovieRental\MovieRental\obj\Debug\MovieRental.Migrations.Deleteunwanted.resources

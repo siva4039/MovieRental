@@ -201,14 +201,17 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\Api\CustomersController.cs" />
     <Compile Include="Controllers\Api\MoviesController.cs" />
+    <Compile Include="Controllers\Api\NewRentalsController.cs" />
     <Compile Include="Controllers\CustomersController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\MoviesController.cs" />
+    <Compile Include="Controllers\RentalsController.cs" />
     <Compile Include="Dtos\CustomerDto.cs" />
     <Compile Include="Dtos\GenreDto.cs" />
     <Compile Include="Dtos\MembershipTypeDto.cs" />
     <Compile Include="Dtos\MovieDto.cs" />
+    <Compile Include="Dtos\NewRentalDto.cs" />
     <Compile Include="GlimpseSecurityPolicy.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -277,6 +280,22 @@
     <Compile Include="Migrations\202009081516576_AddMobile.designer.cs">
       <DependentUpon>202009081516576_AddMobile.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202009141013440_AddNewRentalDomainClass.cs" />
+    <Compile Include="Migrations\202009141013440_AddNewRentalDomainClass.designer.cs">
+      <DependentUpon>202009141013440_AddNewRentalDomainClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202009141042513_AddNumberAvailableToMovie.cs" />
+    <Compile Include="Migrations\202009141042513_AddNumberAvailableToMovie.designer.cs">
+      <DependentUpon>202009141042513_AddNumberAvailableToMovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202009151222548_AddRentalEntityClass.cs" />
+    <Compile Include="Migrations\202009151222548_AddRentalEntityClass.designer.cs">
+      <DependentUpon>202009151222548_AddRentalEntityClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202009151302344_Deleteunwanted.cs" />
+    <Compile Include="Migrations\202009151302344_Deleteunwanted.designer.cs">
+      <DependentUpon>202009151302344_Deleteunwanted.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -288,6 +307,7 @@
     <Compile Include="Models\Movie.cs" />
     <Compile Include="Models\MovieViewModel.cs" />
     <Compile Include="Models\Must18YearsOldIfAMember.cs" />
+    <Compile Include="Models\Rental.cs" />
     <Compile Include="Models\RollName.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -404,10 +424,13 @@
     <Content Include="Content\DataTables\images\sort_desc.png" />
     <Content Include="Content\DataTables\images\sort_desc_disabled.png" />
     <Content Include="Content\DataTables\swf\flashExport.swf" />
+    <Content Include="Content\typeahead.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Scripts\bloodhound.js" />
+    <Content Include="Scripts\bloodhound.min.js" />
     <Content Include="Scripts\bootbox.js" />
     <Content Include="Scripts\bootbox.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -489,6 +512,10 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\typeahead.bundle.js" />
+    <Content Include="Scripts\typeahead.bundle.min.js" />
+    <Content Include="Scripts\typeahead.jquery.js" />
+    <Content Include="Scripts\typeahead.jquery.min.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -532,6 +559,7 @@
     <Content Include="Views\Movies\Create.cshtml" />
     <Content Include="Views\Movies\Edit.cshtml" />
     <Content Include="Views\Movies\ReadOnlyList.cshtml" />
+    <Content Include="Views\Rentals\New.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -597,6 +625,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202009081516576_AddMobile.resx">
       <DependentUpon>202009081516576_AddMobile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202009141013440_AddNewRentalDomainClass.resx">
+      <DependentUpon>202009141013440_AddNewRentalDomainClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202009141042513_AddNumberAvailableToMovie.resx">
+      <DependentUpon>202009141042513_AddNumberAvailableToMovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202009151222548_AddRentalEntityClass.resx">
+      <DependentUpon>202009151222548_AddRentalEntityClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202009151302344_Deleteunwanted.resx">
+      <DependentUpon>202009151302344_Deleteunwanted.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

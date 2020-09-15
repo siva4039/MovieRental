@@ -27,13 +27,18 @@ namespace MovieRental.Controllers.Api
 
         //Get api/movies
         [HttpGet]
-        public IHttpActionResult GetMovie()
+        public IEnumerable<MovieDto> GetMovie(string query =null)
         {
-            var movieDto = _context.movies
-                .Include(m=>m.Genre)
+            var moviesQuery = _context.movies
+                .Include(m => m.Genre)
+                .Where(m => m.NumberAvailable > 0);
+
+            if (!string.IsNullOrWhiteSpace(query))
+                moviesQuery = moviesQuery.Where(m => m.Name.Contains(query));
+
+            return moviesQuery
                 .ToList()
                 .Select(Mapper.Map<Movie, MovieDto>);
-            return Ok(movieDto);
         }
 
         //Get api/movies/1
