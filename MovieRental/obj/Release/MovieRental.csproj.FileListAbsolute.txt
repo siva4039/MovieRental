@@ -140,3 +140,4 @@ C:\Users\QL494BU\source\GITREPO\MovieRental\MovieRental\obj\Release\MovieRental.
 C:\Users\QL494BU\source\GITREPO\MovieRental\MovieRental\obj\Release\MovieRental.csproj.CopyComplete
 C:\Users\QL494BU\source\GITREPO\MovieRental\MovieRental\obj\Release\MovieRental.dll
 C:\Users\QL494BU\source\GITREPO\MovieRental\MovieRental\obj\Release\MovieRental.pdb
+C:\Users\QL494BU\source\GITREPO\MovieRental\MovieRental\bin\Elmah.dll
